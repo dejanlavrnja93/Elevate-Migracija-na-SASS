@@ -1,5 +1,10 @@
 /* General Styles */
 $primary-color:#ff7e5f;
+@mixin responsive ($breakpoint){
+    @media screen and (max-width: $breakpoint){
+        @content;
+    }
+}
 $justify-between:space-between;
 
 
@@ -114,7 +119,7 @@ h2 {
 }
 
 /* Responsive */
-@media screen and (max-width: 992px) {
+@include responsive(992px) {
     .card-list {
         flex-direction: column;
         align-items: center;
