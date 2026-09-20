@@ -130,5 +130,35 @@ h2 {
     width: 80%;
   }
 }
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: row;
+    gap: 15px;
+    padding: 15px;
+  }
+  .navbar .nav-links {
+    text-align: center;
+  }
+  .navbar .nav-links li {
+    display: block;
+  }
+  .main {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .main .content {
+    width: 100%;
+  }
+  .main img {
+    width: 80%;
+  }
+  .main h1 {
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=elevate.css.map */
