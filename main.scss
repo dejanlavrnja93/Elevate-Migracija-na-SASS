@@ -1,0 +1,44 @@
+@use 'mixins' as*;
+$primary-color: #ff7e5f;
+$justify-between: space-between;
+/* Main Section */
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: $justify-between;
+    padding: 100px 10px;
+}
+.main .content {
+    width: 50%;
+}
+.main h1 {
+    font-size: 48px;
+    color: $primary-color;
+}
+.main p {
+    font-size: 18px;
+}
+.main img {
+    width: 40%;
+}
+
+//Logo/Lista linkova i dugme idu jedno ispod drugo na malom ekranu
+@include responsive(576px) {
+    .main {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        max-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main .content{
+        width: 100%;
+    }
+    .main img{
+        width: 80%;
+    }
+    .main h1 {
+        text-align: center;
+    }
+}
