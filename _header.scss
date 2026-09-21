@@ -1,6 +1,4 @@
-@use 'mixins' as*;
-$primary-color: #ff7e5f;
-$justify-between: space-between;
+@use 'variables' as *;
 .navbar {
     display: flex;
     justify-content: $justify-between;

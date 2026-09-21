@@ -1,3 +1,6 @@
+$primary-color: #ff7e5f;
+$justify-between: space-between;
+
 @mixin responsive($breakpoint) {
     @media screen and (max-width: $breakpoint) {
         @content;

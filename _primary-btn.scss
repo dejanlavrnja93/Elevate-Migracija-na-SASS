@@ -1,4 +1,4 @@
-$primary-color: #ff7e5f;
+@use 'variables' as *;
 /* Primary Button */
 .primary-btn {
     display: inline-block;
